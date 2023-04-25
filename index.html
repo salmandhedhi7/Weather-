@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src='main.js'></script>
+ </head>
+  <body>     
+    <h2 class="round"> <i class="bi bi-cloud-sun nostyle"></i>Weather App</h2>
+    <content>
+        <h1 class="bi bi-cloud-sun-fill"></h1>
+        <h2>Enter Your City</h2>
+        <h2>And See Weather</h2>
+        <form onsubmit="CalculateWeather(event)">
+            <p>Enter City Here:</p>
+            <input required id="cityName" class="input" step="0.1" type="text" placeholder="Enter City Name">
+            <button class="button" type="submit">See Weather</button>
+        </form>
+        <h3 id="city"></h3>
+        <result>
+            <div id="image"></div>
+
+            <h2 id='skytitle'></h2>
+
+            <h1 id='title'></h1>
+
+            <row>
+                <p class="explanation" id="now"></p>
+                <p class="explanation" id="sky"></p>
+            </row>
+
+            <row>
+                <p class="explanation" id="humidity"></p>
+                <p class="explanation" id="country"></p>
+            </row>
+
+            <row>
+                <p class="explanation" id="wind"></p>
+                <p class="explanation" id="pressure"></p>
+            </row>
+
+            <row>
+                <p class="explanation" id="min"></p>
+                <p class="explanation" id="max"></p>
+            </row>
+
+        </result>
+    </content>
+    <br />
+    <hr />
+    <br />
+    <p class="center">Thanks For Visiting</p>
+    <br />
+    <p class="center">Regards! Muhammad Salman&copy;</p>
+
+</body>
+
+</html> 
